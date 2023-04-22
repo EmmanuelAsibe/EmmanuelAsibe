@@ -1,0 +1,152 @@
+*{
+    box-sizing: border-box;
+    padding: 0%;
+    margin: 0%;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+    background: hsl(30, 38%, 92%);
+    max-width: 1440px;
+    display: flex;
+    justify-content: center;
+}
+
+
+.container{
+    background: white;
+    margin: 8rem auto;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border-radius: .8rem;
+    width: 730px;
+}
+
+.card{
+    width: 700px;
+    height: 530px;
+    display: flex;
+    gap: 2rem;
+}
+
+.left img{
+    border-top-left-radius: .8rem;
+    border-bottom-left-radius: .8rem;
+    height: 530px;
+    width: 350px;
+    object-fit: cover;
+}
+
+.left{
+    margin: 0%;
+}
+
+.right{
+    display: flex;
+    flex-direction: column;
+    gap: .8rem;
+    margin-top: 2rem;
+    text-align: start;
+}
+
+.right h3{
+    margin-top: .8rem;
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-family: Montserrat;
+    color: gray;
+    letter-spacing: .3rem;
+}
+
+.right .header{
+    margin-top: 1rem;
+    line-height: 2.7rem;
+    font-weight: 800;
+    font-size: 3rem;
+    font-family: Fraunces;
+}
+
+.right p{
+    margin-top: .5rem;
+    font-size: 1rem;
+    font-family: Montserrat;
+    line-height: 1.7rem;
+    font-weight: 500;
+    color: gray;
+}
+
+.right .price{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.right .price h1{
+    font-family:  Fraunces;
+    font-weight: 800;
+    font-size: 2.5rem;
+    color: hsl(158, 36%, 37%);
+}
+
+.right .price h2{
+    font-family:  Montserrat;
+    font-weight: 500;
+    text-decoration: line-through;
+    font-size: 1rem;
+    color: gray;
+}
+
+.btn{
+    display: flex;
+    gap: 1rem;
+    color: white;
+    border-radius: .8rem;
+    text-align: center;
+    font-weight: 600;
+    font-family: Montserrat;
+    margin-top: 1rem;
+    padding: 1rem 2rem;
+    background: hsl(158, 36%, 37%);
+    justify-content: center;
+}
+
+@media (max-width:544px) {
+    .card{
+        height: 820px;
+        width: 400px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+       
+       
+    }
+    .container{
+        border-bottom-left-radius: .8rem;
+        border-bottom-right-radius: .8rem;
+        margin: 4rem;
+        
+    }
+    .left img{
+        height: 300px;
+        width: 400px;
+        object-fit: cover;
+        border-radius: 0;
+        border-top-right-radius: .8rem;
+        border-top-left-radius: .8rem;
+    }
+    .right{
+        padding: 2rem;
+    }
+    .right h3{
+        margin-top: -4rem;
+    }
+    .right .header{
+        display: flex;
+        font-size: 2.5rem;
+        
+    }
+}
